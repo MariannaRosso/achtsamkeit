@@ -812,3 +812,33 @@ body {
 .navbar .navbar-nav .nav-link[href*="christmas_pie_zurich"].active {
   color: #e11919 !important;
 }
+
+
+.background-line path{
+    fill: none;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 2500;
+
+    animation: drawErase 30s ease-in-out infinite;
+}
+
+@keyframes drawErase{
+
+    /* Draw */
+    0%{
+        stroke-dashoffset:2500;
+    }
+
+    50%{
+        stroke-dashoffset:0;
+    }
+
+    /* Immediately erase */
+    100%{
+        stroke-dashoffset:-2500;
+    }
+}
