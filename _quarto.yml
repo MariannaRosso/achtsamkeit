@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - logo_square.png
+
+website:
+  title: "Achtsamkeit"
+  search: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: meditation.qmd
+        text: Meditation
+      - href: music.qmd
+        text: Music
+      - href: aboutme.qmd
+        text: About Me      
+
+metadata:
+  lang: en
+
+format:
+  html: 
+    include-after-body: 
+    - footer.html
+    
+    favicon: logo_square.png
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    include-in-header: head.html
+
+editor: visual
