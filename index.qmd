@@ -1,5 +1,6 @@
 ---
 title: "Benjamin Ineichen - Achtsamkeit"
+page-layout: full
 description: "Benjamin Ineichen Website"
 toc: false
 format:
@@ -8,45 +9,18 @@ format:
     raw-html: true
 ---
 
-<div class="background-line">
-<svg
-    class="background-line"
-    viewBox="-80 415 120 60"
-    preserveAspectRatio="xMidYMid meet">
-  <path
-    d="m -61.408005,423.75458 c 0,0 -0.56946,43.27955 14.2367,24.48713 14.80616,-18.79243 8.54201,-30.75126 -1.13893,-18.79245 -9.68095,11.95882 10.81989,31.32073 12.52829,20.50085 1.7084,-10.81988 -1.70841,-11.38936 -13.09776,-10.81989 -11.38935,0.56947 -25.05657,-22.20925 -5.69468,-22.20925 19.36189,0 -11.95883,20.50086 -10.25043,30.1818 1.70841,9.68095 -6.8336,13.66723 2.84734,9.68096 9.68095,-3.98628 -1.70839,-22.77872 9.11149,-22.77872 10.81988,0 -11.95882,23.34818 -2.84734,25.62606 9.11148,2.27787 11.38937,-19.36191 19.36191,-20.50085 7.97254,-1.13894 10.81988,26.19553 1.7084,23.34819 -9.11147,-2.84734 -39.29326,-46.12691 -23.34818,-46.12691 15.94508,0 -19.93137,28.4734 -12.5283,28.4734 7.40308,0 29.61234,-2.84735 27.90394,-12.5283 -1.70841,-9.68094 -5.6947,31.32074 -13.09777,26.765 -7.40307,-4.55575 3.41682,-43.84904 12.5283,-39.29329 9.11147,4.55574 -6.83361,17.65352 2.27787,22.77872 8.55393,4.81159 20.1981,1.98977 27.64269,7.37914"
-    fill="none"
-    stroke="#31302e"
-    stroke-width="0.5"
-    stroke-linecap="round"/>
-</svg>
-</div>
+<div style="height: 2rem;"></div>
+
+![](logo_circle.png){fig-align="center"}
 
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc sed nisi consequat sagittis vel eget neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vestibulum tellus id sapien dapibus eleifend. In hac habitasse platea dictumst. Fusce sit amet lacus ut justo maximus volutpat ut et lectus. Praesent sagittis quam sed porta cursus. Donec fringilla laoreet ipsum ac facilisis. Suspendisse nulla justo, commodo vel posuere vel, lacinia eu dolor. Cras laoreet rutrum nibh, et mollis ante. Vestibulum vel lobortis risus.
 
-This is the website for Ben
+Etiam commodo tellus at varius finibus. Quisque eget cursus sem, eget malesuada arcu. Suspendisse lacinia arcu quis magna pellentesque auctor. Nam tempor libero dui, eget ornare risus vestibulum non. Mauris venenatis augue velit, non sollicitudin nulla dictum a. Nulla gravida eros et lectus feugiat maximus. Donec leo dui, hendrerit a maximus id, mattis a neque. Nulla sed ipsum purus. Nullam hendrerit consequat sem nec ornare. Maecenas lacus lectus, ultricies nec pellentesque id, mattis a libero. Etiam pellentesque urna at posuere sollicitudin. Donec porttitor sit amet diam vitae tempus. Morbi consectetur elementum dolor fermentum hendrerit. Praesent tempor sodales neque. In ac semper quam.
+
+Proin facilisis ante vel sapien facilisis aliquam. Etiam et pellentesque dui. Ut et rutrum ligula, quis ultrices enim. Duis commodo dictum tellus non elementum. Fusce rhoncus nisi vitae nibh aliquam, non commodo tortor viverra. Ut porta elit sed urna vulputate facilisis. Proin lacinia eleifend imperdiet. In quis auctor justo. Curabitur ultricies ligula urna, sit amet fringilla augue volutpat non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sodales quam ac lectus semper feugiat.
+
+Suspendisse suscipit lectus eleifend risus luctus, a dapibus lacus viverra. Nunc a euismod dolor. Ut sem sapien, suscipit vitae augue et, luctus consequat eros. Nunc eleifend commodo mattis. Ut porta fringilla nibh, in pulvinar nunc tempus et. Aliquam dapibus risus ac justo lobortis commodo. Proin cursus fermentum neque. Donec vitae lacus quis sem malesuada molestie. Curabitur pretium placerat mollis. Proin interdum, risus vitae consectetur tempor, nibh ante consectetur nulla, vel rutrum sapien diam elementum purus. Nunc gravida tellus ullamcorper, tempor odio efficitur, mollis augue.
 
 
-<div class="language-switch">
-  <a href="index.html">English</a> |
-  <a href="de/index.html">Deutsch</a>
-</div>
-
-
-<!-- NAV COLLAPSE FIX -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-  const navbarCollapse = document.querySelector('.navbar-collapse');
-
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if (navbarCollapse.classList.contains('show')) {
-        const collapse = new bootstrap.Collapse(navbarCollapse);
-        collapse.hide();
-      }
-    });
-  });
-});
-</script>
-
+{{< include _leaves.html >}}

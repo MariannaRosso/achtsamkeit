@@ -4,6 +4,7 @@ project:
   resources:
     - CNAME
     - logo_square.png
+    - animation.js
 
 website:
   title: "Achtsamkeit"
@@ -24,8 +25,10 @@ metadata:
 
 format:
   html: 
-    include-after-body: 
+    include-after-body:
+    - animation.html
     - footer.html
+
     
     favicon: logo_square.png
     theme:
