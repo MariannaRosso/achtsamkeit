@@ -11,7 +11,7 @@ format:
 
 <div style="height: 2rem;"></div>
 
-![](logo_circle.png){fig-align="center"}
+![](logo_circle.png){fig-align="center" width="310"}
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc sed nisi consequat sagittis vel eget neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vestibulum tellus id sapien dapibus eleifend. In hac habitasse platea dictumst. Fusce sit amet lacus ut justo maximus volutpat ut et lectus. Praesent sagittis quam sed porta cursus. Donec fringilla laoreet ipsum ac facilisis. Suspendisse nulla justo, commodo vel posuere vel, lacinia eu dolor. Cras laoreet rutrum nibh, et mollis ante. Vestibulum vel lobortis risus.

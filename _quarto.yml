@@ -18,7 +18,9 @@ website:
       - href: music.qmd
         text: Music
       - href: aboutme.qmd
-        text: About Me      
+        text: About Me    
+      - href: fun.qmd
+        text: Just For Fun   
 
 metadata:
   lang: en

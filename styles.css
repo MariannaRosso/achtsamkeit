@@ -8,6 +8,8 @@
   --color-taupe:       #dbd8c4;
   --color-sage:         #c7cab1;
   --color-text-dark:  #4a4a3c;
+  --color-text-verydark: #23231d
+  --color-text-black: #000000
 }
 
 /* -----------------------------------------------------
@@ -236,9 +238,12 @@ NAVBAR
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: var(--color-white) !important;
+  color: var(--color-verydark) !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 13px rgba(255, 255, 255, 1);
 }
 
 
@@ -279,4 +284,42 @@ Leaves animation
 @keyframes sway {
   0%, 100% { transform: rotate(-8deg); }
   50%      { transform: rotate(10deg); }
+}
+
+/* =====================================================
+Figures filter
+===================================================== */
+
+.hover-reveal {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hover-reveal img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.6s ease;
+}
+
+.tint-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-sage); /* #c7cab1 */
+  mix-blend-mode: color;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.hover-reveal:hover img {
+  filter: grayscale(0%);
+}
+
+.hover-reveal:hover .tint-overlay {
+  opacity: 0;
 }
