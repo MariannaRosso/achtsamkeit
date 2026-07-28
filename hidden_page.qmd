@@ -1,0 +1,40 @@
+---
+title: "MBSR Course"
+description: ""
+keywords: [""]
+toc: false
+format:
+  html:
+    css: styles.css
+    raw-html: true 
+---
+
+# MBSR Course
+
+### MBSR – Stressbewältigung durch Achtsamkeit 
+
+8-Wochen-Kurs nach Jon Kabat-Zinn Achtsamkeit bedeutet, den gegenwärtigen Moment bewusst und ohne Bewertung wahrzunehmen. Sie kann helfen, Stress besser zu bewältigen, den Umgang mit schwierigen Gedanken und Emotionen zu verändern und mehr Gelassenheit im Alltag zu entwickeln. MBSR (Mindfulness-Based Stress Reduction) ist ein wissenschaftlich fundiertes 8-Wochen- Programm, das weltweit in Gesundheitswesen, Unternehmen und Bildungseinrichtungen eingesetzt wird. Die Wirksamkeit wurde in zahlreichen wissenschaftlichen Studien untersucht.
+
+### Kursaufbau 
+
+8 wöchentliche Kursabende (Daten: ....) und ein Achtsamkeitstag
+
+### Kursinhalte 
+
+Geführte Meditationen, Sanfte Körperübungen und achtsame Bewegung, Impulse zum Umgang mit Stress, Achtsamkeits-Übungen für den Alltag, Kursunterlagen und Audioanleitungen für das tägliche Üben zu Hause Für wen ist der Kurs geeignet? Der Kurs richtet sich an Menschen, die Stress bewusster begegnen, ihre Achtsamkeit vertiefen oder mehr Ruhe und Klarheit in ihren Alltag bringen möchten. Vorkenntnisse sind nicht erforderlich. Der Kurs ersetzt keine psychotherapeutische oder medizinische Behandlung. Er kann jedoch eine sinnvolle Ergänzung sein und Menschen dabei unterstützen, einen achtsameren und gesünderen Umgang mit den Herausforderungen des Alltags zu entwickeln.
+
+### Über die Kursleitung 
+
+Prof. Dr. med. Dr. phil. Benjamin Ineichen: Arzt und Professor für Hirnforschung an der Universität Bern. Die Achtsamkeitspraxis begleitet ihn seit über zehn Jahren. Ihm ist es wichtig, die persönliche Erfahrung der Achtsamkeit mit ihrem wissenschaftlichen Fundament zu verbinden und beides in den Kurs einzubringen. Der Kurs wird im Rahmen der Ausbildung zum MBSR-Lehrer nach dem standardisierten MBSR-Curriculum durchgeführt.
+
+### Kursinformationen 
+
+Zeitraum: Januar – Februar 2027
+
+Umfang: 8 Kursabende und 1 Achtsamkeitstag
+
+Ort: \[Ort\] Kosten: \[CHF\]
+
+Anmeldung: \[E-Mail / Website\]
+
+{{< include _leaves.html >}}

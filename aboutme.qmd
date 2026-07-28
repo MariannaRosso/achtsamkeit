@@ -10,3 +10,5 @@ format:
 ---
 
 # About Me
+
+I also teach courses [Link](hidden_page.qmd)
