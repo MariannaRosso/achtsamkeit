@@ -1,0 +1,14 @@
+---
+title: "Meditation"
+description: ""
+keywords: [""]
+toc: false
+format:
+  html:
+    css: styles.css
+    raw-html: true 
+---
+
+# Über mich
+
+Ich unterrichte auch Kurse [Link](hidden_page.qmd)

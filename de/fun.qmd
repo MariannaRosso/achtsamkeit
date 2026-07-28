@@ -1,0 +1,19 @@
+---
+title: "Fun"
+description: ""
+keywords: [""]
+toc: false
+format:
+  html:
+    css: styles.css
+    raw-html: true 
+---
+
+# Spass
+
+<div class="hover-reveal" style="width: 500px;">
+  <img src="images/meme_figure.jpeg" alt="EVERYTHING IS FINE">
+  <div class="tint-overlay"></div>
+</div>
+
+{{< include _leaves.html >}}

@@ -144,12 +144,10 @@ ul.task-list li input[type="checkbox"] {
       <h3>Benjamin Ineichen</h3>
       <p>Bern, Switzerland</p>
     </div>
-
     <!-- Center Logo -->
     <div class="footer-logo">
       <img src="logo_footer.png">
     </div>
-
     <!-- Right Section -->
     <div class="footer-right">
       <h3>Get in touch</h3>
@@ -159,9 +157,27 @@ ul.task-list li input[type="checkbox"] {
   
   
 <div class="language-switch">
-  <a href="index.html">English</a> |
-  <a href="de/index.html">Deutsch</a>
+  <a id="lang-en" href="#">English</a> |
+  <a id="lang-de" href="#">Deutsch</a>
 </div>
+
+<script>
+(function() {
+  var path = window.location.pathname;
+  var isGerman = path.indexOf('/de/') !== -1;
+
+  var enLink = document.getElementById('lang-en');
+  var deLink = document.getElementById('lang-de');
+
+  if (isGerman) {
+    enLink.href = path.replace('/de/', '/');
+    deLink.href = path;
+  } else {
+    enLink.href = path;
+    deLink.href = '/de' + path;
+  }
+})();
+</script>
 
   <div class="footer-bottom">
     <p class="psst">This website was programmed in Quarto by <a href="https://mariannarosso.github.io/Portfolio/" target="_blank">Marianna Rosso</a> — <a href="https://github.com/MariannaRosso/achtsamkeit" target="_blank">see the code here</a>.</p>

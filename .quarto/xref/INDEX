@@ -19,5 +19,26 @@
   },
   "hidden_page.qmd": {
     "hidden_page.html": "3d109257"
+  },
+  "de/hidden_page_de.qmd": {
+    "hidden_page_de.html": "58469f3a"
+  },
+  "de/hidden_page.qmd": {
+    "hidden_page.html": "d6532a96"
+  },
+  "de/index.qmd": {
+    "index.html": "84236107"
+  },
+  "de/music.qmd": {
+    "music.html": "faf05624"
+  },
+  "de/meditation.qmd": {
+    "meditation.html": "f44d22af"
+  },
+  "de/aboutme.qmd": {
+    "aboutme.html": "111688fb"
+  },
+  "de/fun.qmd": {
+    "fun.html": "0844d5cb"
   }
 }
