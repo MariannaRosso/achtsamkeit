@@ -36,7 +36,8 @@
     deLink.href = path;
   } else {
     enLink.href = path;
-    deLink.href = '/de' + path;
+    var idx = path.lastIndexOf('/');
+    deLink.href = path.substring(0, idx) + '/de' + path.substring(idx);
   }
 })();
 </script>
