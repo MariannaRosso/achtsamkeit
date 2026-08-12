@@ -11,5 +11,4 @@ format:
 
 # Meditation
 
-
-{{< include _leaves.html >}}
+{{< include _oak_leaves.html >}}

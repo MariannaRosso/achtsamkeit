@@ -47,4 +47,4 @@ Cost: \[CHF\]\
 
 Registration: \[Email / Website\]
 
-{{< include _leaves.html >}}
+{{< include _oak_leaves.html >}}
