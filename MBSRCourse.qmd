@@ -19,7 +19,7 @@ Mindfulness means consciously perceiving the present moment without judgment. It
 
 ### Structure
 
-8 weekly evening sessions (dates: ....) and one Day of Mindfulness
+8 weekly evening sessions and one Day of Mindfulness
 
 ### Contents
 
@@ -37,14 +37,16 @@ The course is conducted as part of his training to become an MBSR teacher, follo
 
 ### Information
 
-Period: January – February 2027\
-
 Scope: 8 evening sessions and 1 Day of Mindfulness\
 
-Location: \[Location\]\
+Period: Wed, 20.01.–10.03.2027, 19:15–21:45\
 
-Cost: \[CHF\]\
+Mindfulness day: Sa, 20.02., 10:00–16:30 Uhr\
 
-Registration: \[Email / Website\]
+Location: Spitalgasse 40, Bern 3011
+
+Cost: CHF 490\
+
+Registration: [benjamin.v.ineichen@gmail.com](mailto:benjamin.v.ineichen@gmail.com)
 
 {{< include _oak_leaves.html >}}

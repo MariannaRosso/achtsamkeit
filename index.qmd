@@ -12,14 +12,32 @@ format:
 ::: {style="height: 2rem;"}
 :::
 
-![](logo_circle.png){fig-align="center" width="310"}
+::::: {style="display: flex; justify-content: center;"}
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/headshot_circle.png" alt="EVERYTHING IS FINE"/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc sed nisi consequat sagittis vel eget neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vestibulum tellus id sapien dapibus eleifend. In hac habitasse platea dictumst. Fusce sit amet lacus ut justo maximus volutpat ut et lectus. Praesent sagittis quam sed porta cursus. Donec fringilla laoreet ipsum ac facilisis. Suspendisse nulla justo, commodo vel posuere vel, lacinia eu dolor. Cras laoreet rutrum nibh, et mollis ante. Vestibulum vel lobortis risus.
+::: tint-overlay
+:::
+::::
+:::::
 
-Etiam commodo tellus at varius finibus. Quisque eget cursus sem, eget malesuada arcu. Suspendisse lacinia arcu quis magna pellentesque auctor. Nam tempor libero dui, eget ornare risus vestibulum non. Mauris venenatis augue velit, non sollicitudin nulla dictum a. Nulla gravida eros et lectus feugiat maximus. Donec leo dui, hendrerit a maximus id, mattis a neque. Nulla sed ipsum purus. Nullam hendrerit consequat sem nec ornare. Maecenas lacus lectus, ultricies nec pellentesque id, mattis a libero. Etiam pellentesque urna at posuere sollicitudin. Donec porttitor sit amet diam vitae tempus. Morbi consectetur elementum dolor fermentum hendrerit. Praesent tempor sodales neque. In ac semper quam.
+<br>
 
-Proin facilisis ante vel sapien facilisis aliquam. Etiam et pellentesque dui. Ut et rutrum ligula, quis ultrices enim. Duis commodo dictum tellus non elementum. Fusce rhoncus nisi vitae nibh aliquam, non commodo tortor viverra. Ut porta elit sed urna vulputate facilisis. Proin lacinia eleifend imperdiet. In quis auctor justo. Curabitur ultricies ligula urna, sit amet fringilla augue volutpat non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sodales quam ac lectus semper feugiat.
+Hi! I’m Ben. Or Beni, Benjamin, Benji... I respond to most variations. Welcome to my virtual world. I’m very broadly interested, but the two things that have shaped my own life most consistently and sustainably are music and meditation. Both have also helped me understand a tiny bit better how our minds work (another interest of mine).
 
-Suspendisse suscipit lectus eleifend risus luctus, a dapibus lacus viverra. Nunc a euismod dolor. Ut sem sapien, suscipit vitae augue et, luctus consequat eros. Nunc eleifend commodo mattis. Ut porta fringilla nibh, in pulvinar nunc tempus et. Aliquam dapibus risus ac justo lobortis commodo. Proin cursus fermentum neque. Donec vitae lacus quis sem malesuada molestie. Curabitur pretium placerat mollis. Proin interdum, risus vitae consectetur tempor, nibh ante consectetur nulla, vel rutrum sapien diam elementum purus. Nunc gravida tellus ullamcorper, tempor odio efficitur, mollis augue.
+I teach meditation and mindfulness, including [MBSR courses in Bern](MBSRCourse.qmd). And I’ve passionately played the piano since childhood—most intensively composing, but also classical music and jazz improvisation. Stay tuned for [upcoming concerts](music.qmd).
+
+Other topics I care about are neuroscience, states of consciousness, and animal welfare, particularly improving the welfare of animals used in research. I worked in animal research myself for many years, doing experiments with mice, rats, monkeys; and some of them severe! I saw how much these animals suffered, contrasting with the relatively little benefit that many animal experiments ultimately bring. Check out this [paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002667). I think some animal research is still necessary these days, unfortunately. But I am also increasingly infuriated by how much animal suffering and research waste we continue to accept for so little gain. We can, and must, do MUCH better: fewer unnecessary experiments, less harm, better research, and ultimately more benefit from every animal used. Read more [here](https://link.springer.com/article/10.1186/s12967-026-08259-y). I hope for a world in which coming generations eventually make animal fully experiments unnecessary.
+
+I’m a professor of medical data science and brain research at the University of Bern, where my group tries to understand how we can make animal research better while reducing the harm we do to animals. Read more about the [STRIDE-Lab](https://ineichen-group.github.io/website/) and the [DCR Medical Data Science Group](https://dcr.unibe.ch/about_us/team/medical_data_science_unit/index_eng.html). Originally, I am a medical doctor but it didn’t take me long to figure out that my heart beats for research.
+
+My own research these days is purely vegetarian: we use existing data and computational models. No animals required.
+
+---
+
+<div style="text-align: center;">
+*Until he extends the circle of compassion to all living beings, man will not himself find peace*   
+— Albert Schweitzer
+</div>
 
 {{< include _oak_leaves.html >}}
