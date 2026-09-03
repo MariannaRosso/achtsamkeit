@@ -72,8 +72,3 @@ format:
   <img src="images/memes/edie.jpg" alt="EVERYTHING IS FINE">
   <div class="tint-overlay"></div>
 </div>
-
-
-
-
-{{< include _oak_leaves.html >}}

@@ -48,5 +48,3 @@ Location: Spitalgasse 40, Bern 3011
 Cost: CHF 490\
 
 Registration: [benjamin.v.ineichen@gmail.com](mailto:benjamin.v.ineichen@gmail.com)
-
-{{< include _oak_leaves.html >}}

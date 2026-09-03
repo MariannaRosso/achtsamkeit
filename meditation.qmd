@@ -82,4 +82,3 @@ There Is No Other — *Ram Dass*
 — Ram Dass
 </div>
 
-{{< include _oak_leaves.html >}}

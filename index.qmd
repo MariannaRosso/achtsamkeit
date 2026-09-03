@@ -40,4 +40,3 @@ My own research these days is purely vegetarian: we use existing data and comput
 — Albert Schweitzer
 </div>
 
-{{< include _oak_leaves.html >}}
