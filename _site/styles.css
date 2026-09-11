@@ -251,6 +251,10 @@ NAVBAR
 Figures filter
 ===================================================== */
 
+/* =====================================================
+Figures filter
+===================================================== */
+
 .hover-reveal {
   position: relative;
   display: inline-block;
@@ -277,6 +281,10 @@ Figures filter
   pointer-events: none;
 }
 
+.tint-overlay {
+  border-radius: inherit;
+}
+
 .hover-reveal:hover img {
   filter: grayscale(0%);
 }
@@ -286,148 +294,54 @@ Figures filter
 }
 
 /* =====================================================
-   LEAVES ANIMATION
-   Draw in → backgrounds appear → gentle wind
-   ===================================================== */
+Leaves animation
+===================================================== */
 
-
-/* -----------------------------------------------------
-   POSITION & SIZE
-   ----------------------------------------------------- */
-
-.leaves-decoration {
+#oak-leaves-bg {
   position: fixed;
-  top: 450px;
-  left: 0px;
-  z-index: -1;
+  left: 0;
+  top: 300px;
+  width: 28vw;
+  height: 100vh;
+  z-index: 0;
   pointer-events: none;
-
-  --leaf-scale: 0.6;
-
-  transform: scale(var(--leaf-scale));
-  transform-origin: center center;
-
-  /* Wind starts after the leaves have appeared */
-  animation: leaves-wind 5s ease-in-out infinite 1.9s;
+  overflow: visible;
+  opacity: 0.9;
 }
 
+#oak-leaves-bg * {
+  pointer-events: none !important;
+}
 
-/* -----------------------------------------------------
-   OUTLINE DRAWING — initial state
-   ----------------------------------------------------- */
+#oak-leaves-bg svg {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
 
-/*
-   The JavaScript in _oak_leaves.html calculates the
-   actual length of every SVG path and stores it in
-   --path-length.
-*/
-
-.leaves-decoration #leaf1 path,
-.leaves-decoration #leaf2 path,
-.leaves-decoration #leaf3 path,
-.leaves-decoration #leaf4 path {
+/* The SVG is decorative: let the page remain fully interactive. */
+#oak-leaves-bg .oak-outline {
   fill: none;
-  stroke-dasharray: var(--path-length);
-  stroke-dashoffset: var(--path-length);
-  opacity: 1;
 }
 
-
-/* -----------------------------------------------------
-   DRAW THE FOUR LEAVES SEQUENTIALLY
-   ----------------------------------------------------- */
-
-.leaves-decoration #leaf1 path {
-  animation: leaves-draw 0.9s ease-out forwards 0s;
-}
-
-.leaves-decoration #leaf2 path {
-  animation: leaves-draw 0.9s ease-out forwards 0.12s;
-}
-
-.leaves-decoration #leaf3 path {
-  animation: leaves-draw 0.9s ease-out forwards 0.24s;
-}
-
-.leaves-decoration #leaf4 path {
-  animation: leaves-draw 0.9s ease-out forwards 0.36s;
-}
-
-
-@keyframes leaves-draw {
-  from {
-    stroke-dashoffset: var(--path-length);
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-
-/* -----------------------------------------------------
-   BACKGROUNDS — initially invisible
-   ----------------------------------------------------- */
-
-.leaves-decoration #backgroundleaf1,
-.leaves-decoration #backgroundleaf2,
-.leaves-decoration #backgroundleaf3,
-.leaves-decoration #backgroundleaf4 {
+#oak-leaves-bg .oak-background {
   opacity: 0;
 }
 
-
-/* -----------------------------------------------------
-   BACKGROUNDS APPEAR AFTER EACH OUTLINE
-   ----------------------------------------------------- */
-
-.leaves-decoration #backgroundleaf1 {
-  animation: leaves-background 0.4s ease-out forwards 0.95s;
+/* Keep Quarto's page content above the illustration. */
+body > #oak-leaves-bg ~ *,
+body > header,
+body > nav,
+#quarto-content,
+.quarto-container,
+.page-columns,
+#quarto-document-content {
+  position: relative;
+  z-index: 1;
 }
 
-.leaves-decoration #backgroundleaf2 {
-  animation: leaves-background 0.4s ease-out forwards 1.07s;
-}
-
-.leaves-decoration #backgroundleaf3 {
-  animation: leaves-background 0.4s ease-out forwards 1.19s;
-}
-
-.leaves-decoration #backgroundleaf4 {
-  animation: leaves-background 0.4s ease-out forwards 1.31s;
-}
-
-
-@keyframes leaves-background {
-  from {
-    opacity: 0;
+@media (prefers-reduced-motion: reduce) {
+  #oak-leaves-bg {
+    opacity: 0.75;
   }
-
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* -----------------------------------------------------
-   WIND
-   ----------------------------------------------------- */
-
-@keyframes leaves-wind {
-
-  0%,
-  100% {
-    transform:
-      scale(var(--leaf-scale))
-      rotate(-1.5deg)
-      translateX(0);
-  }
-
-  50% {
-    transform:
-      scale(var(--leaf-scale))
-      rotate(1.5deg)
-      translateX(3px);
-  }
-
 }

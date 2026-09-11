@@ -27,9 +27,8 @@ metadata:
 format:
   html: 
     include-after-body:
-    - footer.html
-
-    
+      - footer.html
+      - oak_leaves_background.html
     favicon: logo_square.png
     theme:
       - cosmo
