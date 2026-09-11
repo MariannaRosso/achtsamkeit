@@ -14,20 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // ============================================================
 
   // Time for each outline to draw
-  const drawDuration = 2600;
+  const drawDuration = 3400;
 
   // Delay between outline elements
-  const drawStagger = 150;
+  const drawStagger = 180;
+
+  // Start the fills BEFORE the outlines have finished
+  const fillStartDelay = 2000;
 
   // Time for each leaf background to fade in
-  const fillDuration = 400;
+  const fillDuration = 220;
 
   // Delay between individual leaf fills
   const fillDelays = {
     backgroundleaf1: 0,
-    backgroundleaf2: 120,
-    backgroundleaf3: 240,
-    backgroundleaf4: 360
+    backgroundleaf2: 70,
+    backgroundleaf3: 140,
+    backgroundleaf4: 210
   };
 
   // How gently the wind starts
@@ -35,31 +38,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ============================================================
-  // CREATE MIRRORED SVG
+  // CREATE SECOND / MIRRORED SVG
   // ============================================================
 
   const rightSvg = originalSvg.cloneNode(true);
 
   rightSvg.classList.add("oak-leaves-svg-right");
 
-  // Remove the original SVG id if it has one
-  // so there are not two identical IDs.
+  // Remove the SVG's own ID, if it has one
+  // so there aren't duplicate SVG IDs.
   rightSvg.removeAttribute("id");
 
   container.appendChild(rightSvg);
 
 
   // ============================================================
-  // SVGs TO ANIMATE
+  // BRANCH SETTINGS
+  // ============================================================
+  //
+  // Each branch has its own wind timing and phase.
+  //
+  // LEFT:
+  //   starts immediately
+  //
+  // RIGHT:
+  //   starts 1.2 seconds later
+  //   has a different phase
+  //
   // ============================================================
 
-  const svgs = [
-    originalSvg,
-    rightSvg
+  const branches = [
+    {
+      svg: originalSvg,
+      windDelay: 0,
+      phaseOffset: 0
+    },
+    {
+      svg: rightSvg,
+      windDelay: 1200,
+      phaseOffset: 1.1
+    }
   ];
 
 
-  // Helper function: find an element inside a particular SVG
+  // ============================================================
+  // HELPER
+  // ============================================================
+
   const find = (svg, id) => {
     return svg.querySelector(`#${id}`);
   };
@@ -80,11 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const allOutlines = [];
 
 
-  svgs.forEach(svg => {
+  branches.forEach(branch => {
 
     outlineIds.forEach((id, index) => {
 
-      const path = find(svg, id);
+      const path = find(branch.svg, id);
 
       if (!path) return;
 
@@ -120,11 +145,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const allBackgrounds = [];
 
 
-  svgs.forEach(svg => {
+  branches.forEach(branch => {
 
     backgroundIds.forEach(id => {
 
-      const background = find(svg, id);
+      const background = find(branch.svg, id);
 
       if (!background) return;
 
@@ -149,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "leaf1",
       x: 33.788,
       y: 71.567,
-      amplitude: 3.2,
+      amplitude: 5,
       period: 5.4,
       phase: 0.2
     },
@@ -157,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "leaf2",
       x: 39.129,
       y: 44.900,
-      amplitude: 2.8,
+      amplitude: 4,
       period: 4.8,
       phase: 1.4
     },
@@ -165,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "leaf3",
       x: 66.302,
       y: 44.817,
-      amplitude: 2.6,
+      amplitude: 3,
       period: 5.9,
       phase: 3.0
     },
@@ -173,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "leaf4",
       x: 65.634,
       y: 28.039,
-      amplitude: 3.4,
+      amplitude: 4,
       period: 5.1,
       phase: 4.5
     }
@@ -187,14 +212,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const groups = [];
 
 
-  svgs.forEach(svg => {
+  branches.forEach(branch => {
 
     leaves.forEach(item => {
 
-      const leaf = find(svg, item.id);
+      const leaf = find(branch.svg, item.id);
 
       const background = find(
-        svg,
+        branch.svg,
         "background" + item.id
       );
 
@@ -230,7 +255,9 @@ document.addEventListener("DOMContentLoaded", () => {
         y: item.y,
         amplitude: item.amplitude,
         period: item.period,
-        phase: item.phase
+        phase: item.phase,
+        windDelay: branch.windDelay,
+        phaseOffset: branch.phaseOffset
       });
 
     });
@@ -245,6 +272,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const startDrawing = () => {
 
     const startTime = performance.now();
+
+    // Start the fills independently, before drawing is complete.
+    setTimeout(() => {
+      startFills(performance.now());
+    }, fillStartDelay);
 
 
     const animateDrawing = now => {
@@ -272,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
 
-        // Ease-out
+        // Ease-out cubic
         const easedProgress =
           1 - Math.pow(
             1 - progress,
@@ -298,9 +330,6 @@ document.addEventListener("DOMContentLoaded", () => {
           animateDrawing
         );
 
-      } else {
-
-        startFills(now);
       }
 
     };
@@ -319,10 +348,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const startFills = startTime => {
 
-    // IMPORTANT:
-    //
-    // Start the wind immediately when the fills start.
-    // The wind itself eases in slowly, so the leaves don't jump.
+    // Start the wind at the same time the fills begin.
+    // The wind itself eases in gradually.
     startWind(startTime);
 
 
@@ -363,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
           );
 
 
-        // Smoothstep
+        // Smoothstep easing
         const easedProgress =
           progress *
           progress *
@@ -403,48 +430,64 @@ document.addEventListener("DOMContentLoaded", () => {
   // WIND
   // ============================================================
 
-  const startWind = startTime => {
+  const startWind = globalStartTime => {
 
     const animateWind = now => {
 
-      const elapsed =
-        now - startTime;
-
-
-      const seconds =
-        elapsed / 1000;
-
-
-      // Gradually introduce movement
-      const introProgress =
-        Math.min(
-          elapsed /
-            windIntroDuration,
-          1
-        );
-
-
-      // Smoothstep
-      const introEase =
-        introProgress *
-        introProgress *
-        (3 - 2 * introProgress);
-
-
       groups.forEach(item => {
 
-        // Main movement
+        // Every branch has its own wind starting time.
+        const branchElapsed =
+          now -
+          globalStartTime -
+          item.windDelay;
+
+
+        // This branch hasn't started moving yet.
+        if (branchElapsed <= 0) {
+
+          item.group.setAttribute(
+            "transform",
+            `rotate(0 ${item.x} ${item.y})`
+          );
+
+          return;
+        }
+
+
+        const seconds =
+          branchElapsed / 1000;
+
+
+        // Gradually introduce the movement.
+        const introProgress =
+          Math.min(
+            branchElapsed /
+              windIntroDuration,
+            1
+          );
+
+
+        // Smoothstep easing
+        const introEase =
+          introProgress *
+          introProgress *
+          (3 - 2 * introProgress);
+
+
+        // Main gentle movement
         const main =
           Math.sin(
             (seconds /
               item.period) *
               Math.PI *
               2 +
-              item.phase
+              item.phase +
+              item.phaseOffset
           );
 
 
-        // Secondary movement
+        // Smaller secondary movement
         const secondary =
           0.28 *
           Math.sin(
@@ -452,7 +495,8 @@ document.addEventListener("DOMContentLoaded", () => {
               (item.period * 1.67)) *
               Math.PI *
               2 +
-              item.phase * 1.7
+              item.phase * 1.7 +
+              item.phaseOffset * 0.8
           );
 
 
@@ -464,8 +508,8 @@ document.addEventListener("DOMContentLoaded", () => {
           );
 
 
-        // Starts exactly at zero rotation
-        // and gradually becomes full wind motion
+        // Start from exactly 0 degrees and smoothly
+        // transition into the continuous movement.
         const angle =
           targetAngle *
           introEase;
