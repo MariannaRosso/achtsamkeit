@@ -331,11 +331,11 @@ Leaves animation
 #oak-leaves-bg > svg:first-child {
   position: absolute;
 
-  left: -4vw;
+  left: -1.5vw;
   top: 80px;
 
-  width: 24vw;
-  height: 90vh;
+  width: 22vw;
+  height: 85vh;
 
   display: block;
 }
@@ -348,11 +348,11 @@ Leaves animation
 #oak-leaves-bg > svg.oak-leaves-svg-right {
   position: absolute;
 
-  right: -3vw;
-  top: 300px;
+  right: -1vw;
+  top: 450px;
 
-  width: 18vw;
-  height: 72vh;
+  width: 15vw;
+  height: 65vh;
 
   display: block;
 
