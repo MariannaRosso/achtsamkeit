@@ -22,15 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start the fills BEFORE the outlines have finished
   const fillStartDelay = 2000;
 
-  // Time for each leaf background to fade in
+  // Time for each background to fade in
   const fillDuration = 220;
 
-  // Delay between individual leaf fills
+  // Existing leaf fill delays — UNCHANGED
+  // Acorn backgrounds are added after the leaves.
   const fillDelays = {
     backgroundleaf1: 0,
     backgroundleaf2: 70,
     backgroundleaf3: 140,
-    backgroundleaf4: 210
+    backgroundleaf4: 210,
+
+    "acorn-big-background": 280,
+    "acorn-small-background": 340
   };
 
   // How gently the wind starts
@@ -45,8 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   rightSvg.classList.add("oak-leaves-svg-right");
 
-  // Remove the SVG's own ID, if it has one
-  // so there aren't duplicate SVG IDs.
+  // Remove the SVG's own ID so there aren't duplicate SVG IDs.
   rightSvg.removeAttribute("id");
 
   container.appendChild(rightSvg);
@@ -54,17 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ============================================================
   // BRANCH SETTINGS
-  // ============================================================
-  //
-  // Each branch has its own wind timing and phase.
-  //
-  // LEFT:
-  //   starts immediately
-  //
-  // RIGHT:
-  //   starts 1.2 seconds later
-  //   has a different phase
-  //
   // ============================================================
 
   const branches = [
@@ -99,7 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
     "leaf1",
     "leaf2",
     "leaf3",
-    "leaf4"
+    "leaf4",
+
+    // NEW ACORN
+    "acorn-big-line",
+    "acorn-small-line"
   ];
 
   const allOutlines = [];
@@ -132,14 +128,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ============================================================
-  // LEAF BACKGROUNDS
+  // BACKGROUNDS
   // ============================================================
 
   const backgroundIds = [
     "backgroundleaf1",
     "backgroundleaf2",
     "backgroundleaf3",
-    "backgroundleaf4"
+    "backgroundleaf4",
+
+    // NEW ACORN
+    "acorn-big-background",
+    "acorn-small-background"
   ];
 
   const allBackgrounds = [];
@@ -166,10 +166,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ============================================================
-  // LEAF / WIND SETTINGS
+  // LEAF / ACORN WIND SETTINGS
   // ============================================================
 
   const leaves = [
+
+    // ==========================================================
+    // EXISTING LEAVES — UNCHANGED
+    // ==========================================================
+
     {
       id: "leaf1",
       x: 33.788,
@@ -178,6 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
       period: 5.4,
       phase: 0.2
     },
+
     {
       id: "leaf2",
       x: 39.129,
@@ -186,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
       period: 4.8,
       phase: 1.4
     },
+
     {
       id: "leaf3",
       x: 66.302,
@@ -194,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
       period: 5.9,
       phase: 3.0
     },
+
     {
       id: "leaf4",
       x: 65.634,
@@ -201,12 +209,35 @@ document.addEventListener("DOMContentLoaded", () => {
       amplitude: 4,
       period: 5.1,
       phase: 4.5
+    },
+
+
+    // ==========================================================
+    // NEW ACORN
+    // ==========================================================
+
+    {
+      id: "acorn",
+
+      // Rotation point
+      x: 19.1,
+      y: 79.5,
+
+      // Smaller movement than the leaves
+      amplitude: 3,
+
+      // Slightly slower movement
+      period: 5.6,
+
+      // Independent phase
+      phase: 2.2
     }
+
   ];
 
 
   // ============================================================
-  // GROUP EACH LEAF WITH ITS BACKGROUND
+  // GROUP LEAVES + ACORN FOR WIND ANIMATION
   // ============================================================
 
   const groups = [];
@@ -216,38 +247,149 @@ document.addEventListener("DOMContentLoaded", () => {
 
     leaves.forEach(item => {
 
-      const leaf = find(branch.svg, item.id);
 
-      const background = find(
-        branch.svg,
-        "background" + item.id
-      );
+      // ========================================================
+      // NORMAL LEAVES
+      // ========================================================
 
-      if (!leaf) return;
+      if (item.id !== "acorn") {
 
+        const leaf = find(
+          branch.svg,
+          item.id
+        );
 
-      const group = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "g"
-      );
+        const background = find(
+          branch.svg,
+          "background" + item.id
+        );
 
-
-      leaf.parentNode.insertBefore(
-        group,
-        leaf
-      );
+        if (!leaf) return;
 
 
-      group.appendChild(leaf);
+        const group =
+          document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "g"
+          );
 
 
-      if (background) {
-        group.insertBefore(
-          background,
+        leaf.parentNode.insertBefore(
+          group,
           leaf
         );
+
+
+        // Background first
+        if (background) {
+
+          group.appendChild(
+            background
+          );
+
+        }
+
+
+        // Outline second
+        group.appendChild(
+          leaf
+        );
+
+
+        groups.push({
+          group,
+          x: item.x,
+          y: item.y,
+          amplitude: item.amplitude,
+          period: item.period,
+          phase: item.phase,
+          windDelay: branch.windDelay,
+          phaseOffset: branch.phaseOffset
+        });
+
+
+        return;
       }
 
+
+      // ========================================================
+      // ACORN
+      // ========================================================
+
+      const bigLine = find(
+        branch.svg,
+        "acorn-big-line"
+      );
+
+      const smallLine = find(
+        branch.svg,
+        "acorn-small-line"
+      );
+
+      const bigBackground = find(
+        branch.svg,
+        "acorn-big-background"
+      );
+
+      const smallBackground = find(
+        branch.svg,
+        "acorn-small-background"
+      );
+
+
+      if (!bigLine || !smallLine) return;
+
+
+      const group =
+        document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "g"
+        );
+
+
+      // Put the group where the first acorn
+      // outline currently sits.
+      bigLine.parentNode.insertBefore(
+        group,
+        bigLine
+      );
+
+
+      // ========================================================
+      // ACORN LAYER ORDER
+      // ========================================================
+
+      // Backgrounds first
+      if (bigBackground) {
+
+        group.appendChild(
+          bigBackground
+        );
+
+      }
+
+      if (smallBackground) {
+
+        group.appendChild(
+          smallBackground
+        );
+
+      }
+
+
+      // Outlines second
+      group.appendChild(
+        bigLine
+      );
+
+      group.appendChild(
+        smallLine
+      );
+
+
+      // ========================================================
+      // ADD ACORN TO WIND ANIMATION
+      // ========================================================
 
       groups.push({
         group,
@@ -271,11 +413,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const startDrawing = () => {
 
-    const startTime = performance.now();
+    const startTime =
+      performance.now();
 
-    // Start the fills independently, before drawing is complete.
+
+    // Start fills independently,
+    // before drawing is complete.
     setTimeout(() => {
-      startFills(performance.now());
+
+      startFills(
+        performance.now()
+      );
+
     }, fillStartDelay);
 
 
@@ -287,7 +436,9 @@ document.addEventListener("DOMContentLoaded", () => {
       allOutlines.forEach(item => {
 
         const elapsed =
-          now - startTime - item.delay;
+          now -
+          startTime -
+          item.delay;
 
 
         if (elapsed <= 0) {
@@ -295,18 +446,21 @@ document.addEventListener("DOMContentLoaded", () => {
           allDone = false;
 
           return;
+
         }
 
 
-        const progress = Math.min(
-          elapsed / drawDuration,
-          1
-        );
+        const progress =
+          Math.min(
+            elapsed / drawDuration,
+            1
+          );
 
 
         // Ease-out cubic
         const easedProgress =
-          1 - Math.pow(
+          1 -
+          Math.pow(
             1 - progress,
             3
           );
@@ -318,7 +472,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (progress < 1) {
+
           allDone = false;
+
         }
 
       });
@@ -348,15 +504,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const startFills = startTime => {
 
-    // Start the wind at the same time the fills begin.
-    // The wind itself eases in gradually.
+    // Start wind at the same time
+    // as the fills.
     startWind(startTime);
 
 
     const animateFills = now => {
 
       const elapsed =
-        now - startTime;
+        now -
+        startTime;
 
 
       let allDone = true;
@@ -369,16 +526,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         const localElapsed =
-          elapsed - delay;
+          elapsed -
+          delay;
 
 
         if (localElapsed <= 0) {
 
-          item.element.style.opacity = "0";
+          item.element.style.opacity =
+            "0";
 
           allDone = false;
 
           return;
+
         }
 
 
@@ -402,7 +562,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (progress < 1) {
+
           allDone = false;
+
         }
 
       });
@@ -436,14 +598,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       groups.forEach(item => {
 
-        // Every branch has its own wind starting time.
+
+        // Every branch has its own wind
+        // starting time.
         const branchElapsed =
           now -
           globalStartTime -
           item.windDelay;
 
 
-        // This branch hasn't started moving yet.
+        // Branch hasn't started moving yet.
         if (branchElapsed <= 0) {
 
           item.group.setAttribute(
@@ -452,6 +616,7 @@ document.addEventListener("DOMContentLoaded", () => {
           );
 
           return;
+
         }
 
 
@@ -459,7 +624,7 @@ document.addEventListener("DOMContentLoaded", () => {
           branchElapsed / 1000;
 
 
-        // Gradually introduce the movement.
+        // Gradually introduce movement.
         const introProgress =
           Math.min(
             branchElapsed /
@@ -478,12 +643,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // Main gentle movement
         const main =
           Math.sin(
-            (seconds /
-              item.period) *
-              Math.PI *
-              2 +
-              item.phase +
-              item.phaseOffset
+            (
+              seconds /
+              item.period
+            ) *
+            Math.PI *
+            2 +
+            item.phase +
+            item.phaseOffset
           );
 
 
@@ -491,12 +658,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const secondary =
           0.28 *
           Math.sin(
-            (seconds /
-              (item.period * 1.67)) *
-              Math.PI *
-              2 +
-              item.phase * 1.7 +
-              item.phaseOffset * 0.8
+            (
+              seconds /
+              (item.period * 1.67)
+            ) *
+            Math.PI *
+            2 +
+            item.phase * 1.7 +
+            item.phaseOffset * 0.8
           );
 
 
@@ -508,8 +677,9 @@ document.addEventListener("DOMContentLoaded", () => {
           );
 
 
-        // Start from exactly 0 degrees and smoothly
-        // transition into the continuous movement.
+        // Start from exactly 0 degrees
+        // and smoothly transition into
+        // continuous movement.
         const angle =
           targetAngle *
           introEase;
@@ -550,16 +720,23 @@ document.addEventListener("DOMContentLoaded", () => {
   if (prefersReducedMotion) {
 
     allOutlines.forEach(item => {
-      item.path.style.strokeDashoffset = "0";
+
+      item.path.style.strokeDashoffset =
+        "0";
+
     });
 
 
     allBackgrounds.forEach(item => {
-      item.element.style.opacity = "1";
+
+      item.element.style.opacity =
+        "1";
+
     });
 
 
     return;
+
   }
 
 
