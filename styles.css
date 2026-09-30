@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'The Seasons', 'Avenir', 'Avenir Next', serif;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+
 h1, h2 {
   color: var(--color-sage);
 }
@@ -332,7 +338,7 @@ Leaves animation
   position: absolute;
 
   left: -1.5vw;
-  top: 80px;
+  top: 60px;
 
   width: 22vw;
   height: 85vh;
@@ -349,7 +355,7 @@ Leaves animation
   position: absolute;
 
   right: -1vw;
-  top: 450px;
+  top: 350px;
 
   width: 15vw;
   height: 65vh;

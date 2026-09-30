@@ -11,6 +11,16 @@ format:
 
 # About Me
 
+
+::::: {style="display: flex; justify-content: center;"}
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/IMG_6439.jpg" alt="EVERYTHING IS FINE"/>
+
+::: tint-overlay
+:::
+::::
+:::::
+
 I’m a medical doctor by training, but it didn’t take me long to figure out that my heart beats for research. Today, I’m a professor of medical data science and brain research at the University of Bern.
 
 I’ve also spent several years abroad for research fellowships, including in Washington, DC, USA, and Stockholm, Sweden. Living and working in different countries, cultures and research environments has shaped how I think about science, people and the world more broadly.
@@ -30,17 +40,3 @@ Mentoring younger researchers is also something I care about a lot. Good mentors
 I’m also very interested in psychedelic research and their responsible use. I think psychedelics can make an important positive contribution to how we understand ourselves, our minds, and our place in the world and universe. Used carefully and in the right context, they may also help foster a more compassionate society and shift attention towards the things that actually matter.
 
 More broadly, my worldview has been influenced by Albert Hofmann’s idea that science offers one powerful perspective on reality, but not necessarily a complete one. I say this as a neuroscientist and a strong believer in science: there may be aspects of our experience, consciousness and perhaps the universe itself that are not accessible to scientific measurement. I don’t see this as a rejection of science, but as an acknowledgement of its boundaries—and a reason to remain curious about what may lie beyond them.
-
-::::: {style="display: flex; justify-content: center;"}
-:::: {.hover-reveal style="width: 500px;"}
-<img src="images/IMG_6439.jpg"/>
-
-::: tint-overlay
-:::
-
-::::: {style="display: flex; justify-content: center;"}
-:::: {.hover-reveal style="width: 500px;"}
-<img src="images/IMG_6456.jpg"/>
-
-::: tint-overlay
-:::
