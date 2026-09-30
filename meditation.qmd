@@ -18,29 +18,34 @@ format:
 
 ---
 
+I teach meditation and mindfulness, primarily through [MBSR](MBSRCourse.qmd) (Mindfulness-Based Stress Reduction). My own practice has developed over about ten years and includes a number of longer silent retreats in different meditation traditions, mostly Zen, but also Vipassana and Metta.
+
+I have practised with teachers including Vanja Palmers, Amarana, Manfred Hellrigl, Isis Bianzano, Rainer Künzi and Ingeborg Mösching. My thinking about meditation, mind and consciousness has also been influenced by people such as Alan Watts, Ram Dass, Albert Hofmann, Culadasa, Robert Macfarlane and John Vervaeke.
+
 I found my way to meditation and mindfulness through a truly mind-shattering experience about ten years ago. Since then, meditation stuck and has since become part of my life.
 
 What fascinates me most is simply observing this terrific and slightly bizarre thing we call our mind. Watching thoughts and emotions appear, often without having the slightest say in what comes next. And, every now and then, getting a small glimpse behind the very convincing illusion that there is one cohesive “self” somewhere in there running the show. Instead, there can be a sense of something much more spacious: thoughts, feelings, sensations and perceptions arising and disappearing within awareness.
 
-I find this both fascinating and useful. Realizing that we don't actually choose most of what we think or feel can create a little distance from ourselves. A thought can just be a thought. An emotion can just be an emotion. We don't necessarily have to believe it, act on it, or make it part of who we are.
+I find this both fascinating and useful. Realizing that we don’t actually choose most of what we think or feel can create a little distance from ourselves. A thought can just be a thought. An emotion can just be an emotion. Nothing more, nothing less. We don’t necessarily have to believe it, act on it, or make it part of who we are.
 
 As a scientist and fairly critical thinker, I keep asking myself this question: How did meditation actually change me? Especially because, after ten years, I still consider myself very much a beginner.
 
-These days, I would say yes, quite fundamentally; but not in any spectacular way. Meditation hasn't turned me into a different person, made me permanently calm, or solved the usual messiness of being human. The change has been much more subtle.
+These days, I would say yes, quite fundamentally; but not in any spectacular way. Meditation hasn’t turned me into a different person, made me permanently calm, or solved the usual messiness of being human. The change has been much more subtle.
 
 Over time, there has been a small but real shift away from believing every thought and emotion my brain produces. Perhaps also towards meeting myself, other people, and the world with a little more openness, kindness and compassion. Sometimes, at least.
 
-And I have the strong sense that I am standing at the absolute beginning of understanding any of this...
+And I have the strong sense that I am standing at the absolute beginning of understanding any of this…
 
-## Learning mindfulness
+## Learning mindfulness  
 
-I also teach meditation, primarily through MBSR (Mindfulness-Based Stress Reduction). MBSR is an eight-week mindfulness program developed by Jon Kabat-Zinn at the University of Massachusetts Medical Center in the late 1970s and has since been studied extensively in clinical and non-clinical settings.
+MBSR is an eight-week mindfulness program developed by Jon Kabat-Zinn at the University of Massachusetts Medical Center in the late 1970s and has since been studied extensively in clinical and non-clinical settings.
 
-I think MBSR is a great starting point for people who are curious about meditation and mindfulness but don't quite know where to begin. It offers a structured and largely secular approach, which can also make it accessible to people who are interested in meditation but have a strong allergy to anything that sounds too spiritual.
+I think MBSR is a great starting point for people who are curious about meditation and mindfulness but don’t quite know where to begin. It offers a structured and largely secular approach, which can also make it accessible to people who are interested in meditation but have a strong allergy to anything that sounds too spiritual.
 
-Check below for upcoming MBSR courses, or get in touch if you're interested in private sessions.
+Check below for upcoming MBSR courses, or get in touch if you’re interested in private sessions.
 
-## Books that shaped my thinking about mind and consciousness
+
+## Books that shaped my thinking about mind, mindfulness, meditation and consciousness
 
 The Mind Illuminated — *Culadasa (John Yates)*  
 How to Change Your Mind — *Michael Pollan*  
@@ -82,3 +87,6 @@ There Is No Other — *Ram Dass*
 — Ram Dass
 </div>
 
+---
+
+![](images/Flyer1_website_image.png){fig-align="center" .border-img}

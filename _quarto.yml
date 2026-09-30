@@ -19,7 +19,7 @@ website:
       - href: aboutme.qmd
         text: About Me    
       - href: fun.qmd
-        text: Just For Fun   
+        text: Nonsense   
 
 metadata:
   lang: en

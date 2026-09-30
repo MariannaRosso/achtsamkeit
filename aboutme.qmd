@@ -11,32 +11,36 @@ format:
 
 # About Me
 
-Thanks for checking! I didn’t really know what to add here, but I wasn’t able to remove this page either, so here we are. There’s plenty of information about me on the other pages anyway :)  
+I’m a medical doctor by training, but it didn’t take me long to figure out that my heart beats for research. Today, I’m a professor of medical data science and brain research at the University of Bern.
 
-Here are some funny quotes:
-„Mein, dein … das sind doch bürgerliche Kategorien.“  
-— Das Känguru  
+I’ve also spent several years abroad for research fellowships, including in Washington, DC, USA, and Stockholm, Sweden. Living and working in different countries, cultures and research environments has shaped how I think about science, people and the world more broadly.
 
-„Lieber fünf Mal nachgefragt als ein Mal nachgedacht.“  
-— Marc-Uwe, Die Känguru-Chroniken  
+A major focus of my work is a question that has bothered me for years: why do so many findings from animal experiments fail to translate to humans, and how can we improve that while reducing animal testing?
 
-"Aber Obacht", sagt das Känguru, "das liest sich positiver, als es gemeint ist. Die benutzen da immer so 'nen Kapitalistengeheimcode.  
+I worked in animal research myself for many years, doing experiments with mice, rats and monkeys, some of them severe. I saw how much these animals suffered, contrasting with the relatively little benefit that many animal experiments ultimately bring. Check out this paper.
 
-Die Frau liest laut vor:  
-"Das Känguru war bei seiner Arbeit immer unkreativ, unpünktlich, unflexibel, desinteressiert, nicht belastbar, kaum teamfähig, schwer zu begeistern und unkreativ. Vorgesetzten gegenüber war es unfähig, sich unterzuordnen, vulgär, obszön und gelegentlich handgreiflich. Vom Tacker bis zum Flachbildschirm waren alle ihm zugeteilten Arbeitsgeräte innerhalb von Stunden nicht mehr auffindbar. Schon am zweiten Arbeitstag versuchte es mit einigem Erfolg, einen Generalstreik zu organisieren. Die Firma sah sich gezwungen, nach neun Tagen eine fristlose Kündigung auszusprechen, zu diesem Zeitpunkt war das Känguru allerdings schon mehrere Tage nicht mehr an seinem Arbeitsplatz erschienen.  
+I think some animal research is still necessary these days, unfortunately. But I am also increasingly infuriated by how much animal suffering and research waste we continue to accept for so little gain. We can, and must, do MUCH better: fewer unnecessary experiments, less harm, better research, and ultimately more benefit from every animal used. Read more here.
 
-Die Zustellung der Kündigung erwies sich aus diesem Grund und auch wegen der falsch angegebenen Adresse als schwierig. Auf die Einstellung der Gehaltszahlung reagierte das Känguru mit einer Klage vor dem Arbeitsgericht. Mehrfach bezeichnete es in dem darauf folgenden Prozess seine Vorgesetzten und die Gerichtsdiener als verdammte Faschisten. Auch fragte es den Richter, ob er nicht mitbekommen habe, dass sich einige Gesetze seit den 40er Jahren geändert hätten. Nach verlorenem Prozess drohte es damit, dreckige Firmengeheimnisse zu veröffentlichen. Obwohl der Firmenleitung unklar war, von welchen dreckigen Geheimnissen das Känguru sprach, wurde es sicherheitshalber wieder eingestellt und ist seitdem nie wieder am Arbeitsplatz erschienen. Teile der Belegschaft sind bis zum heutigen Tag immer noch aufmüpfig und ungehorsam."
+My group now studies these questions mostly using large-scale evidence synthesis, medical data and computational methods. We try to understand which findings from animal research translate to humans, which do not, and why. Read more about the STRIDE-Lab and the DCR Medical Data Science Group.
 
-Die Frau lässt das Zeugnis sinken.  
+I hope for a world in which coming generations eventually make animal experiments unnecessary.
 
-"Und was liest sich positiver als es gemeint ist?", fragt sie.  
+Mentoring younger researchers is also something I care about a lot. Good mentors and role models were instrumental in my own development, and I try to pass that on by supporting younger scientists in finding their own path.
 
-"Nächster Satz", sagt das Känguru.  
+I’m also very interested in psychedelic research and their responsible use. I think psychedelics can make an important positive contribution to how we understand ourselves, our minds, and our place in the world and universe. Used carefully and in the right context, they may also help foster a more compassionate society and shift attention towards the things that actually matter.
 
-Sie liest: "In den fünf Tagen, die es tatsächlich immer bei uns gearbeitet hat, hatte es allerdings durch seine Geselligkeit zur Verbesserung des Betriebsklimas beigetragen."  
+More broadly, my worldview has been influenced by Albert Hofmann’s idea that science offers one powerful perspective on reality, but not necessarily a complete one. I say this as a neuroscientist and a strong believer in science: there may be aspects of our experience, consciousness and perhaps the universe itself that are not accessible to scientific measurement. I don’t see this as a rejection of science, but as an acknowledgement of its boundaries—and a reason to remain curious about what may lie beyond them.
 
-"Hä?", frage ich verwundert.  
+::::: {style="display: flex; justify-content: center;"}
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/IMG_6439.jpg"/>
 
-"Das ist ein Code für übertriebenen Alkoholkonsum", sagt die Frau.  
+::: tint-overlay
+:::
 
-— Das Känguru
+::::: {style="display: flex; justify-content: center;"}
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/IMG_6456.jpg"/>
+
+::: tint-overlay
+:::

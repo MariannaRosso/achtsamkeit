@@ -7,9 +7,9 @@
   --color-sand:        #eee7d7;
   --color-taupe:       #dbd8c4;
   --color-sage:         #c2caa8;
-  --color-text-dark:  #4a4a3c;
-  --color-text-verydark: #23231d
-  --color-text-black: #000000
+  --color-text-dark:  #402719;
+  --color-text-verydark: #402719
+  --color-text-black: #402719
 }
 
 /* -----------------------------------------------------
@@ -53,7 +53,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: var(--color--taupe);
+  color: var(--color--dark);
   text-decoration: underline;
 }
 
@@ -73,7 +73,14 @@ h1, h2 {
 
 .spacer-small { height: 0.3rem; }
 
+.border-img {
+  border: 1px solid #9a8879;
+  border-radius: 4px;
+}
 
+#quarto-document-content p {
+  text-align: justify;
+}
 
 /* -----------------------------------------
 FOOTER (Full-width, centered logo)
@@ -241,9 +248,8 @@ NAVBAR
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: var(--color-verydark) !important;
+  color: #543320 !important;
   font-weight: bold !important;
-  text-shadow: 0 0 13px rgba(255, 255, 255, 1);
 }
 
 
