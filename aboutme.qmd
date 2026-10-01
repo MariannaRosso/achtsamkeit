@@ -26,11 +26,11 @@ I’ve also spent several years abroad for research fellowships, including in Wa
 
 A major focus of my work is a question that has bothered me for years: why do so many findings from animal experiments fail to translate to humans, and how can we improve that while reducing animal testing?
 
-I worked in animal research myself for many years, doing experiments with mice, rats and monkeys, some of them severe. I saw how much these animals suffered, contrasting with the relatively little benefit that many animal experiments ultimately bring. Check out this paper.
+I worked in animal research myself for many years, doing experiments with mice, rats and monkeys, some of them severe. I saw how much these animals suffered, contrasting with the relatively little benefit that many animal experiments ultimately bring. [Check out this paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002667).
 
-I think some animal research is still necessary these days, unfortunately. But I am also increasingly infuriated by how much animal suffering and research waste we continue to accept for so little gain. We can, and must, do MUCH better: fewer unnecessary experiments, less harm, better research, and ultimately more benefit from every animal used. Read more here.
+I think some animal research is still necessary these days, unfortunately. But I am also increasingly infuriated by how much animal suffering and research waste we continue to accept for so little gain. We can, and must, do MUCH better: fewer unnecessary experiments, less harm, better research, and ultimately more benefit from every animal used. [Read more here](https://link.springer.com/article/10.1186/s12967-026-08259-y).
 
-My group now studies these questions mostly using large-scale evidence synthesis, medical data and computational methods. We try to understand which findings from animal research translate to humans, which do not, and why. Read more about the STRIDE-Lab and the DCR Medical Data Science Group.
+My group now studies these questions mostly using large-scale evidence synthesis, medical data and computational methods. We try to understand which findings from animal research translate to humans, which do not, and why. [Read more about the STRIDE-Lab and the DCR Medical Data Science Group](https://dcr.unibe.ch/about_us/team/medical_data_science_unit/index_eng.html).
 
 I hope for a world in which coming generations eventually make animal experiments unnecessary.
 

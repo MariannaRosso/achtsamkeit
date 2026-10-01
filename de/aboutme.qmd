@@ -26,11 +26,11 @@ Für Forschungsaufenthalte habe ich ausserdem mehrere Jahre im Ausland verbracht
 
 Ein Schwerpunkt meiner Arbeit ist eine Frage, die mich seit Jahren beschäftigt: Warum lassen sich so viele Erkenntnisse aus Tierversuchen nicht auf den Menschen übertragen, und wie können wir das verbessern und gleichzeitig Tierversuche reduzieren?
 
-Ich selbst habe viele Jahre in der Tierforschung gearbeitet und Experimente mit Mäusen, Ratten und Affen durchgeführt, einige davon mit schwerer Belastung für die Tiere. Dabei habe ich gesehen, wie sehr diese Tiere leiden und wie wenig Nutzen viele Tierversuche letztlich bringen. [Hier geht es zu dieser Publikation.]
+Ich selbst habe viele Jahre in der Tierforschung gearbeitet und Experimente mit Mäusen, Ratten und Affen durchgeführt, einige davon mit schwerer Belastung für die Tiere. Dabei habe ich gesehen, wie sehr diese Tiere leiden und wie wenig Nutzen viele Tierversuche letztlich bringen. [Hier geht es zu dieser Publikation.](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002667)
 
-Ich denke, dass bestimmte Formen der Tierforschung heutzutage leider noch notwendig sind. Gleichzeitig macht es mich zunehmend wütend, wie viel Tierleid und Verschwendung von Forschungsressourcen wir für so wenig Erkenntnisgewinn weiterhin akzeptieren. Wir können und müssen es VIEL besser machen: weniger unnötige Experimente, weniger Leid, bessere Forschung und letztlich mehr Nutzen aus jedem eingesetzten Tier. [Hier erfährst du mehr.]
+Ich denke, dass bestimmte Formen der Tierforschung heutzutage leider noch notwendig sind. Gleichzeitig macht es mich zunehmend wütend, wie viel Tierleid und Verschwendung von Forschungsressourcen wir für so wenig Erkenntnisgewinn weiterhin akzeptieren. Wir können und müssen es VIEL besser machen: weniger unnötige Experimente, weniger Leid, bessere Forschung und letztlich mehr Nutzen aus jedem eingesetzten Tier. [Hier erfährst du mehr.](https://link.springer.com/article/10.1186/s12967-026-08259-y)
 
-Meine Forschungsgruppe untersucht diese Fragen inzwischen hauptsächlich mithilfe grosser Evidenzsynthesen, medizinischer Daten und computergestützter Methoden. Wir versuchen zu verstehen, welche Erkenntnisse aus der Tierforschung auf den Menschen übertragbar sind, welche nicht und warum. [Mehr über das STRIDE-Lab und die DCR Medical Data Science Group.]
+Meine Forschungsgruppe untersucht diese Fragen inzwischen hauptsächlich mithilfe grosser Evidenzsynthesen, medizinischer Daten und computergestützter Methoden. Wir versuchen zu verstehen, welche Erkenntnisse aus der Tierforschung auf den Menschen übertragbar sind, welche nicht und warum. [Mehr über das STRIDE-Lab und die DCR Medical Data Science Group.](https://dcr.unibe.ch/about_us/team/medical_data_science_unit/index_eng.html)
 
 Ich hoffe auf eine Welt, in der zukünftige Generationen Tierversuche irgendwann nicht mehr benötigen.
 
