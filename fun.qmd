@@ -1,7 +1,7 @@
 ---
-title: "Fun"
-description: ""
-keywords: [""]
+title: "Nonsense & Humour – Benjamin Ineichen"
+description: "A collection of absurd, inappropriate and wonderfully silly humour, inspired by Monty Python, Terry Pratchett, Douglas Adams, Walter Moers and Marc-Uwe Kling."
+keywords: ["Benjamin Ineichen", "humour", "absurd humour", "nonsense", "Monty Python", "Terry Pratchett", "Douglas Adams", "Walter Moers", "Marc-Uwe Kling", "Känguru", "British humour", "comedy"]
 toc: false
 format:
   html:
@@ -15,9 +15,10 @@ I have a weakness for absurd—and sometimes inappropriate—humour. Monty Pytho
 
 Here are a few things I find funny.
 
-"And the Lord spake, saying, 'First shalt thou take out the Holy Pin. Then, shalt thou count to three, no more, no less. Three shalt be the number thou shalt count, and the number of the counting shalt be three. Four shalt thou not count, nor either count thou two, excepting that thou then proceed to three. Five is right out. Once the number three, being the third number, be reached, then lobbest thou thy Holy Hand Grenade of Antioch towards thou foe, who being naughty in my sight, shall snuff it.'" - Monty Python, the Holy Grail  
-“What is your favourite colour?” — Bridgekeeper  
-“Blue. No, yell— AAAAAAAARGH!”  
+"And the Lord spake, saying, 'First shalt thou take out the Holy Pin. Then, shalt thou count to three, no more, no less. Three shalt be the number thou shalt count, and the number of the counting shalt be three. Four shalt thou not count, nor either count thou two, excepting that thou then proceed to three. Five is right out. Once the number three, being the third number, be reached, then lobbest thou thy Holy Hand Grenade of Antioch towards thou foe, who being naughty in my sight, shall snuff it.'" - Monty Python, the Holy Grail\  
+
+“What is your favourite colour?” — Bridgekeeper\  
+“Blue. No, yell— AAAAAAAARGH!”
 
 „Mein, dein … das sind doch bürgerliche Kategorien.“\
 — Das Känguru
@@ -46,65 +47,75 @@ Sie liest: "In den fünf Tagen, die es tatsächlich immer bei uns gearbeitet hat
 
 — Das Känguru
 
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/memes/meme_figure.jpeg" alt="EVERYTHING IS FINE"/>
 
-<div class="hover-reveal" style="width: 500px;">
-  <img src="images/memes/meme_figure.jpeg" alt="EVERYTHING IS FINE">
-  <div class="tint-overlay"></div>
-</div>
+::: tint-overlay
+:::
+::::
 
----
+------------------------------------------------------------------------
 
-<div style="text-align: center;">
-*"You miss 100% of the shots you don't take - Wayne Gretzky"*   
+::: {style="text-align: center;"}
+*"You miss 100% of the shots you don't take - Wayne Gretzky"*\
 — Micheal Scott, Scranton PA
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
-<div class="hover-reveal" style="width: 500px;">
-  <img src="images/memes/Chris.jpg" alt="EVERYTHING IS FINE">
-  <div class="tint-overlay"></div>
-</div>
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/memes/Chris.jpg" alt="EVERYTHING IS FINE"/>
 
+::: tint-overlay
+:::
+::::
 
 <br>
 
-<div class="hover-reveal" style="width: 500px;">
-  <img src="images/memes/ron_ben.jpg" alt="EVERYTHING IS FINE">
-  <div class="tint-overlay"></div>
-</div>
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/memes/ron_ben.jpg" alt="EVERYTHING IS FINE"/>
 
----
+::: tint-overlay
+:::
+::::
 
-<div style="text-align: center;">
-*"Treat yo self!"*   
+------------------------------------------------------------------------
+
+::: {style="text-align: center;"}
+*"Treat yo self!"*\
 — Tom Havenford and Donna Meagle
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
-<div class="hover-reveal" style="width: 500px;">
-  <img src="images/memes/disaster.jpg" alt="EVERYTHING IS FINE">
-  <div class="tint-overlay"></div>
-</div>
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/memes/disaster.jpg" alt="EVERYTHING IS FINE"/>
+
+::: tint-overlay
+:::
+::::
 
 <br>
 
-<div class="hover-reveal" style="width: 500px;">
-  <img src="images/memes/panic.jpg" alt="EVERYTHING IS FINE">
-  <div class="tint-overlay"></div>
-</div>
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/memes/panic.jpg" alt="EVERYTHING IS FINE"/>
 
----
+::: tint-overlay
+:::
+::::
 
-<div style="text-align: center;">
-*"It's fine! The doctor said all my bleeding was internal. That's where the blood's supposed to be."*   
+------------------------------------------------------------------------
+
+::: {style="text-align: center;"}
+*"It's fine! The doctor said all my bleeding was internal. That's where the blood's supposed to be."*\
 — Jake Peralta
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
-<div class="hover-reveal" style="width: 500px;">
-  <img src="images/memes/edie.jpg" alt="EVERYTHING IS FINE">
-  <div class="tint-overlay"></div>
-</div>
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/memes/edie.jpg" alt="EVERYTHING IS FINE"/>
+
+::: tint-overlay
+:::
+::::

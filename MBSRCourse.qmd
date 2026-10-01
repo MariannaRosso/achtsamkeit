@@ -1,7 +1,7 @@
 ---
-title: "MBSR Course"
-description: ""
-keywords: [""]
+title: "MBSR Course in Bern – Mindfulness-Based Stress Reduction"
+description: "8-week MBSR course in Bern based on the standardized Jon Kabat-Zinn curriculum. Learn mindfulness, stress management and meditation through guided practice, mindful movement and a Day of Mindfulness."
+keywords: ["MBSR", "MBSR course", "MBSR Bern", "Mindfulness-Based Stress Reduction", "mindfulness course Bern", "mindfulness", "meditation", "stress management", "stress reduction", "mindfulness training", "Jon Kabat-Zinn", "8-week MBSR course", "Day of Mindfulness"]
 toc: false
 format:
   html:
@@ -47,4 +47,4 @@ Location: Spitalgasse 40, Bern 3011
 
 Cost: CHF 490\
 
-Registration: [benjamin.v.ineichen@gmail.com](mailto:benjamin.v.ineichen@gmail.com)
+Registration: [benjamin.v.ineichen\@gmail.com](mailto:benjamin.v.ineichen@gmail.com)

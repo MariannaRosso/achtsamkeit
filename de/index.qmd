@@ -1,0 +1,42 @@
+---
+title: "Benjamin Ineichen – Achtsamkeit, Meditation & Wissenschaft"
+page-layout: full
+description: "Persönliche Website von Benjamin Ineichen, Professor für Medical Data Science und Hirnforschung an der Universität Bern, Meditations- und Achtsamkeitslehrer sowie Musiker."
+keywords: ["Benjamin Ineichen", "Meditation", "Achtsamkeit", "MBSR", "MBSR Bern", "Meditationslehrer", "Achtsamkeitslehrer", "Musik", "Klavier", "Bewusstsein", "Hirnforschung", "Medical Data Science", "Tierversuche", "Universität Bern"]
+toc: false
+format:
+  html:
+    css: styles.css
+    raw-html: true
+---
+
+::: {style="height: 2rem;"}
+:::
+
+::::: {style="display: flex; justify-content: center;"}
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/headshot_circle.png" alt="Achtsamkeit in Bern"/>
+
+::: tint-overlay
+:::
+::::
+:::::
+
+<br>
+
+Hi! Ich bin Ben. Oder Beni, Benjamin, Benji … Auf die meisten Varianten reagiere ich.
+
+Auf dieser Website geht es hauptsächlich um Musik, Meditation, den Geist, Bewusstsein, Wissenschaft und andere Dinge, die mich faszinieren.
+
+Die beiden Dinge, die mein Leben am beständigsten geprägt haben, sind Musik und Meditation. Ich spiele seit meiner Kindheit Klavier, hauptsächlich komponiere und improvisiere ich, und ich unterrichte Meditation und Achtsamkeit, unter anderem in MBSR-Kursen in Bern.
+
+Ausserdem bin ich Professor für Medical Data Science und Hirnforschung an der Universität Bern. Meine Forschung beschäftigt sich mit einer Frage, die mich seit Jahren beschäftigt: Warum lassen sich so viele Erkenntnisse aus Tierversuchen nicht auf den Menschen übertragen – und wie können wir es besser machen? Und wie können wir Tierversuche reduzieren?
+
+Meine eigene Forschung ist mittlerweile rein vegetarisch: Wir arbeiten mit bereits vorhandenen Daten und computergestützten Modellen. Keine Tiere erforderlich.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: center;"}
+*Until he extends the circle of compassion to all living beings, man will not himself find peace*\
+— Albert Schweitzer
+:::

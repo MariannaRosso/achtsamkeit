@@ -1,0 +1,41 @@
+---
+title: "Über mich – Benjamin Ineichen"
+description: "Benjamin Ineichen ist Professor für Medical Data Science und Hirnforschung an der Universität Bern. Seine Forschung beschäftigt sich mit Tierversuchen, der Übertragbarkeit von Forschungsergebnissen, Evidenzsynthese, medizinischen Daten und computergestützten Methoden."
+keywords: ["Benjamin Ineichen", "Medical Data Science", "Hirnforschung", "Universität Bern", "Tierversuche", "Tierforschung", "Übertragbarkeit von Forschungsergebnissen", "Evidenzsynthese", "medizinische Daten", "computergestützte Forschung", "Neurowissenschaften", "Psychedelika-Forschung", "Wissenschaft"]
+toc: false
+format:
+  html:
+    css: styles.css
+    raw-html: true 
+---
+
+# Über mich
+
+::::: {style="display: flex; justify-content: center;"}
+:::: {.hover-reveal style="width: 500px;"}
+<img src="images/IMG_6439.jpg" alt="EVERYTHING IS FINE"/>
+
+::: tint-overlay
+:::
+::::
+:::::
+
+Ich bin ausgebildeter Arzt, aber es hat nicht lange gedauert, bis ich herausgefunden habe, dass mein Herz für die Forschung schlägt. Heute bin ich Professor für Medical Data Science und Hirnforschung an der Universität Bern.
+
+Für Forschungsaufenthalte habe ich ausserdem mehrere Jahre im Ausland verbracht, unter anderem in Washington, DC, USA, und in Stockholm, Schweden. Das Leben und Arbeiten in verschiedenen Ländern, Kulturen und Forschungsumgebungen hat meine Sicht auf Wissenschaft, Menschen und die Welt im Allgemeinen geprägt.
+
+Ein Schwerpunkt meiner Arbeit ist eine Frage, die mich seit Jahren beschäftigt: Warum lassen sich so viele Erkenntnisse aus Tierversuchen nicht auf den Menschen übertragen, und wie können wir das verbessern und gleichzeitig Tierversuche reduzieren?
+
+Ich selbst habe viele Jahre in der Tierforschung gearbeitet und Experimente mit Mäusen, Ratten und Affen durchgeführt, einige davon mit schwerer Belastung für die Tiere. Dabei habe ich gesehen, wie sehr diese Tiere leiden und wie wenig Nutzen viele Tierversuche letztlich bringen. [Hier geht es zu dieser Publikation.]
+
+Ich denke, dass bestimmte Formen der Tierforschung heutzutage leider noch notwendig sind. Gleichzeitig macht es mich zunehmend wütend, wie viel Tierleid und Verschwendung von Forschungsressourcen wir für so wenig Erkenntnisgewinn weiterhin akzeptieren. Wir können und müssen es VIEL besser machen: weniger unnötige Experimente, weniger Leid, bessere Forschung und letztlich mehr Nutzen aus jedem eingesetzten Tier. [Hier erfährst du mehr.]
+
+Meine Forschungsgruppe untersucht diese Fragen inzwischen hauptsächlich mithilfe grosser Evidenzsynthesen, medizinischer Daten und computergestützter Methoden. Wir versuchen zu verstehen, welche Erkenntnisse aus der Tierforschung auf den Menschen übertragbar sind, welche nicht und warum. [Mehr über das STRIDE-Lab und die DCR Medical Data Science Group.]
+
+Ich hoffe auf eine Welt, in der zukünftige Generationen Tierversuche irgendwann nicht mehr benötigen.
+
+Auch die Betreuung und Begleitung jüngerer Forschender liegt mir sehr am Herzen. Gute Mentorinnen, Mentoren und Vorbilder waren für meine eigene Entwicklung von grosser Bedeutung. Ich versuche, diese Unterstützung weiterzugeben, indem ich jüngere Wissenschaftlerinnen und Wissenschaftler dabei unterstütze, ihren eigenen Weg zu finden.
+
+Ich interessiere mich ausserdem sehr für die psychedelische Forschung und den verantwortungsvollen Umgang mit Psychedelika. Ich glaube, dass Psychedelika einen wichtigen positiven Beitrag dazu leisten können, wie wir uns selbst, unseren Geist und unseren Platz in der Welt und im Universum verstehen. Mit Bedacht und im richtigen Kontext eingesetzt, könnten sie auch dazu beitragen, eine mitfühlendere Gesellschaft zu fördern und unsere Aufmerksamkeit stärker auf die Dinge zu lenken, die tatsächlich wichtig sind.
+
+Allgemeiner wurde mein Weltbild von Albert Hofmanns Vorstellung beeinflusst, dass Wissenschaft eine mächtige Perspektive auf die Realität bietet, aber nicht unbedingt eine vollständige. Ich sage das als Neurowissenschaftler und als jemand, der fest an die Wissenschaft glaubt: Es könnte Aspekte unserer Erfahrung, unseres Bewusstseins und vielleicht sogar des Universums selbst geben, die sich einer wissenschaftlichen Messung entziehen. Ich sehe darin keine Ablehnung der Wissenschaft, sondern eine Anerkennung ihrer Grenzen – und einen Grund, neugierig darauf zu bleiben, was jenseits dieser Grenzen liegen könnte.

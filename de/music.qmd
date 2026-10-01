@@ -1,0 +1,53 @@
+---
+title: "Musik & Klavier – Benjamin Ineichen"
+description: "Benjamin Ineichen ist klassisch ausgebildeter Pianist, Komponist und Improvisator. Entdecke seine Musik, Klavierkonzerte, Kompositionen, Improvisationen und kommenden Auftritte."
+keywords: ["Benjamin Ineichen", "Pianist", "Klavier", "klassischer Pianist", "klassische Musik", "Klavierkonzerte", "Klavierimprovisation", "Komposition", "Klavierkomposition", "Hochzeitspianist", "Eventpianist", "Klaviermusik", "Konzerte", "Improvisation"]
+toc: false
+format:
+  html:
+    css: styles.css
+    raw-html: true 
+---
+
+# Musik
+
+Ich bin klassisch ausgebildeter Pianist und habe im Alter von fünf Jahren mit dem Klavierspielen begonnen. Zu meinen Lehrern gehörten Ricardo Valle, Antje Traub und Regula Stibi. Schon früh begann ich auch zu improvisieren und zu komponieren, unter anderem mit einer formalen Ausbildung bei André Desponds und Kurt Widorski. Improvisation und Komposition haben mich immer noch mehr fasziniert als die Interpretation von bereits notierter Musik. Fast hätte ich ein Musikstudium am Konservatorium begonnen, aber in letzter Minute entschied ich mich stattdessen für ein Medizinstudium …
+
+Von Zeit zu Zeit gebe ich Konzerte – kommende Auftritte findest du weiter unten.
+
+Ich kann stundenlang über Musik und Komponisten sprechen, die ich mag (bitte stoppe mich, wenn ich damit anfange).
+
+Schon immer haben mich komplexe, tiefgründige, dunkle, melancholische und emotional intensive Musik angezogen. Je älter ich werde, desto mehr lerne ich allerdings auch, die Einfachheit zu schätzen.
+
+Von Natur aus fühle ich mich besonders zu Komponisten der Spätromantik und des frühen 20. Jahrhunderts hingezogen, insbesondere aus dem russisch geprägten Teil Europas: Samuil Feinberg, Alexander Scriabin, Leopold Godowsky, Sergei Prokofiev, Sergei Rachmaninoff, Nikolai Medtner, Dmitri Kabalevsky, Igor Stravinsky, Dmitri Shostakovich, Leo Ornstein, Kurt Atterberg und Nikolai Kapustin. Aber auch Claude Debussy, Maurice Ravel, Francis Poulenc, Franz Liszt, Enrique Granados, Isaac Albéniz und viele andere.
+
+Ich bin ausserdem fasziniert von modernerer atmosphärischer Musik, unter anderem von Bill Laurance und Jon Hopkins, und ganz besonders von Progressive Rock aus den 1970er-Jahren: Gong, Yes, CAN, Pink Floyd, Emerson, Lake & Palmer, King Crimson und vielen anderen.
+
+Je unbekannter, desto besser. Ich habe ein GROSSES Herz für Underdogs. Es gibt so viele unentdeckte Perlen. Ich bin fest davon überzeugt, dass die Komponisten, die die meiste Aufmerksamkeit bekommen, nicht unbedingt die besten sind. Es gibt einige absolute Grossmeister, von denen die meisten Menschen – selbst professionelle Musikerinnen und Musiker – kaum je gehört haben.
+
+Meine musikalische Stärke liegt sicherlich nicht in technischer Virtuosität. Viel mehr interessiert mich, wie tonale Sprache und insbesondere Harmonie ganze Klanglandschaften erschaffen können. Die Natur und Emotionen sind wahrscheinlich die zugänglichsten Inspirationsquellen für meine eigenen Kompositionen und Improvisationen.
+
+Weiter unten findest du zwei kurze Beispiele. Das eine ist Alexander Scriabins Prelude Op. 11 Nr. 12 in gis-Moll. Das andere ist ein Stück für Cello und Klavier, das ich inspiriert von einigen Zeilen des Zen-Dichters Ko Un geschrieben habe:
+
+I paddled with only one oar, then I lost that too. For the very first time, I saw myself out on the open water.
+
+Manchmal gebe ich auch Konzerte (kommende Auftritte findest du weiter unten). Ausserdem spiele ich seit vielen Jahren auf Hochzeiten, Geburtstagen und anderen Veranstaltungen. Wenn du einen Pianisten suchst, melde dich gerne bei mir.
+
+## Rückmeldung
+
+"Bens Klavierspiel hat wirklich etwas Leben in unsere Beerdigung gebracht"
+
+{{< video images/Video1.mp4 controls="true" >}}
+
+{{< video images/Video2.mp4 controls="true" >}}
+
+::: {style="text-align: center;"}
+*“He would be a great composer if he knew more about music.”*\
+— Camille Saint-Saëns, supposedly on Debussy
+
+*“Why is it that whenever I hear a piece of music I don’t like, it’s always by Villa-Lobos?”*\
+— Igor Stravinsky
+
+*“Franck is a modulation machine.”*\
+— Claude Debussy, on César Franck
+:::

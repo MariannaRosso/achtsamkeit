@@ -1,12 +1,12 @@
 ---
 title: "Meditation"
-description: ""
-keywords: [""]
+description: "Explore meditation and mindfulness through MBSR, Zen, Vipassana and Metta. Learn about meditation practice, mindfulness, consciousness and the journey of developing a more open and compassionate awareness."
+keywords: ["meditation", "mindfulness", "MBSR", "Mindfulness-Based Stress Reduction", "Zen meditation", "Vipassana", "Metta", "meditation practice", "mindfulness practice", "consciousness", "awareness", "mindfulness course", "meditation teacher"]
 toc: false
 format:
   html:
     css: styles.css
-    raw-html: true 
+    raw-html: true
 ---
 
 # Meditation

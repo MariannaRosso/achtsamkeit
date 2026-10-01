@@ -1,7 +1,8 @@
 ---
-title: "Benjamin Ineichen - Achtsamkeit"
+title: "Benjamin Ineichen – Mindfulness, Meditation & Science"
 page-layout: full
-description: "Benjamin Ineichen Website"
+description: "Personal website of Benjamin Ineichen, professor of medical data science and brain research at the University of Bern, meditation and mindfulness teacher, and musician."
+keywords: ["Benjamin Ineichen", "meditation", "mindfulness", "MBSR", "MBSR Bern", "meditation teacher", "music", "piano", "consciousness", "brain research", "medical data science", "animal research", "animal testing", "University of Bern"]
 toc: false
 format:
   html:
@@ -14,7 +15,7 @@ format:
 
 ::::: {style="display: flex; justify-content: center;"}
 :::: {.hover-reveal style="width: 500px;"}
-<img src="images/headshot_circle.png" alt="EVERYTHING IS FINE"/>
+<img src="images/headshot_circle.png" alt="Mindfulness in Bern"/>
 
 ::: tint-overlay
 :::
@@ -23,8 +24,7 @@ format:
 
 <br>
 
-Hi! I’m Ben.
-Or Beni, Benjamin, Benji… I respond to most variations.
+Hi! I’m Ben. Or Beni, Benjamin, Benji… I respond to most variations.
 
 This website is mostly about music, meditation, minds, consciousness, science, and other things that fascinate me.
 
@@ -34,10 +34,9 @@ I’m also a professor of medical data science and brain research at the Univers
 
 My own research these days is purely vegetarian: we use existing data and computational models. No animals required.
 
+------------------------------------------------------------------------
 
----
-
-<div style="text-align: center;">
-*Until he extends the circle of compassion to all living beings, man will not himself find peace*   
+::: {style="text-align: center;"}
+*Until he extends the circle of compassion to all living beings, man will not himself find peace*\
 — Albert Schweitzer
-</div>
+:::

@@ -1,0 +1,407 @@
+/* -----------------------------------------------------
+   🎨 COLOR PALETTE
+----------------------------------------------------- */
+:root {
+  --color-white:      #ffffff;
+  --color-cream:      #fff7ec;
+  --color-sand:        #eee7d7;
+  --color-taupe:       #dbd8c4;
+  --color-sage:         #c2caa8;
+  --color-text-dark:  #402719;
+  --color-text-verydark: #402719
+  --color-text-black: #402719
+}
+
+/* -----------------------------------------------------
+   🖋️ FONT FACE — The Seasons
+----------------------------------------------------- */
+@font-face {
+  font-family: 'The Seasons';
+  src: url('fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype'),
+       url('fonts/Fontspring-DEMO-theseasons-reg.woff2') format('woff2'),
+       url('fonts/Fontspring-DEMO-theseasons-reg.woff') format('woff'),
+       url('fonts/Fontspring-DEMO-theseasons-reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =====================================================
+ BASE STYLES
+===================================================== */
+main.content.column-body {
+  grid-column: screen-start / screen-end;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; /* cap it so it doesn't stretch edge-to-edge on huge monitors */
+}
+
+.quarto-title-block { display: none; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', 'Avenir', 'Avenir Next', sans-serif;
+  color: var(--color-text-dark);
+  background-color: var(--color-cream);
+}
+
+a {
+  color: var(--color-sage);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--color--dark);
+  text-decoration: underline;
+}
+
+/* Heading font family — The Seasons */
+h1, h2, h3, h4, h5, h6,
+.navbar, .navbar-nav .nav-link,
+.btn-link, form button[type="submit"],
+.menu-list h3 {
+  font-family: 'The Seasons', 'Avenir', 'Avenir Next', serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+
+h1, h2 {
+  color: var(--color-sage);
+}
+
+:target { scroll-margin-top: 50px; }
+
+.spacer-small { height: 0.3rem; }
+
+.border-img {
+  border: 1px solid #9a8879;
+  border-radius: 4px;
+}
+
+#quarto-document-content p {
+  text-align: justify;
+}
+
+/* -----------------------------------------
+FOOTER (Full-width, centered logo)
+----------------------------------------- */
+.site-footer {
+  width: 60vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-sage);
+  color: var(--color-text-dark);
+  padding: 1rem 0 0.8rem;
+  font-family: 'The Seasons', 'Avenir', 'Avenir Next', serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-left, .footer-right {
+  flex: 1 1 200px;
+  text-align: center;
+}
+.footer-left h3,
+.footer-right h3 {
+  font-family: 'The Seasons', 'Avenir', 'Avenir Next', serif;
+  font-size: 1.3rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0.4rem;
+}
+.footer-left p,
+.footer-right p {
+  font-family: 'Lato', 'Avenir', 'Avenir Next', sans-serif;
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.footer-left a,
+.footer-right a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+.footer-left a:hover,
+.footer-right a:hover {
+  color: var(--color-cream);
+  text-decoration: underline;
+}
+
+.footer-logo {
+  flex: 0 1 150px;
+  display: flex;
+  justify-content: center;
+}
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-cream);
+  padding: 6px;
+}
+.footer-icons a {
+  color: var(--color-text-dark);
+  font-size: 1.4rem;
+  margin: 0 0.4rem;
+  transition: color 0.3s ease;
+}
+.footer-icons a:hover {
+  color: var(--color-taupe);
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-text-dark);
+  padding-top: 0.6rem;
+}
+.footer-bottom a {
+  color: var(--color-text-dark);
+  text-decoration: underline;
+}
+.footer-bottom a:hover {
+  color: var(--color-cream);
+}
+.psst {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  color: var(--color-text-dark);
+}
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start !important;
+    gap: 1.4rem !important;
+    padding: 1rem 0 !important;
+    width: 100%;
+  }
+  .footer-left,
+  .footer-right,
+  .footer-logo {
+    flex: unset !important;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-logo img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* -----------------------------------------
+Language Switcher
+----------------------------------------- */
+.language-switch {
+  width: 100%;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-family: 'Lato', 'Avenir', 'Avenir Next', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-dark);
+}
+.language-switch a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.language-switch a:hover {
+  color: var(--color-taupe);
+  text-decoration: underline;
+}
+
+/* =====================================================
+NAVBAR
+===================================================== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-sand);
+  padding: 1.3rem 0;
+}
+.navbar-brand { display: none; }
+.navbar-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+.navbar-nav .nav-link {
+  color: var(--color-text-dark);
+  font-family: 'The Seasons', 'Avenir', 'Avenir Next', serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #543320 !important;
+  font-weight: bold !important;
+}
+
+
+/* =====================================================
+Figures filter
+===================================================== */
+
+/* =====================================================
+Figures filter
+===================================================== */
+
+.hover-reveal {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hover-reveal img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.6s ease;
+}
+
+.tint-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-cream); /* #c7cab1 */
+  mix-blend-mode: color;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.tint-overlay {
+  border-radius: inherit;
+}
+
+.hover-reveal:hover img {
+  filter: grayscale(0%);
+}
+
+.hover-reveal:hover .tint-overlay {
+  opacity: 0;
+}
+
+/* =====================================================
+Leaves animation
+===================================================== */
+/* ==========================================================
+   OAK LEAVES BACKGROUND
+   ========================================================== */
+
+#oak-leaves-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+  opacity: 0.7;
+}
+
+/* Nothing in the decorative SVG should intercept clicks/hover */
+#oak-leaves-bg * {
+  pointer-events: none !important;
+}
+
+
+/* ==========================================================
+   LEFT LEAF BRANCH
+   ========================================================== */
+
+#oak-leaves-bg > svg:first-child {
+  position: absolute;
+
+  left: -1.5vw;
+  top: 60px;
+
+  width: 22vw;
+  height: 85vh;
+
+  display: block;
+}
+
+
+/* ==========================================================
+   RIGHT LEAF BRANCH
+   ========================================================== */
+
+#oak-leaves-bg > svg.oak-leaves-svg-right {
+  position: absolute;
+
+  right: -1vw;
+  top: 350px;
+
+  width: 15vw;
+  height: 65vh;
+
+  display: block;
+
+  /* Mirror the second branch */
+  transform: scaleX(-1);
+}
+
+
+/* ==========================================================
+   SVG ELEMENTS
+   ========================================================== */
+
+#oak-leaves-bg .oak-outline {
+  fill: none;
+}
+
+#oak-leaves-bg .oak-background {
+  opacity: 0;
+}
+
+
+/* ==========================================================
+   KEEP QUARTO CONTENT ABOVE THE ILLUSTRATION
+   ========================================================== */
+
+body > #oak-leaves-bg ~ *,
+body > header,
+body > nav,
+#quarto-content,
+.quarto-container,
+.page-columns,
+#quarto-document-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  #oak-leaves-bg {
+    opacity: 0.75;
+  }
+}

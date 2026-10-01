@@ -1,7 +1,7 @@
 ---
-title: "Meditation"
-description: ""
-keywords: [""]
+title: "About Me – Benjamin Ineichen"
+description: "Benjamin Ineichen is a professor of medical data science and brain research at the University of Bern. His work focuses on animal research, research translation, evidence synthesis, medical data and computational methods."
+keywords: ["Benjamin Ineichen", "medical data science", "brain research", "University of Bern", "animal research", "animal testing", "animal experiments", "research translation", "evidence synthesis", "medical data", "computational research", "neuroscience", "psychedelic research", "science"]
 toc: false
 format:
   html:
@@ -10,7 +10,6 @@ format:
 ---
 
 # About Me
-
 
 ::::: {style="display: flex; justify-content: center;"}
 :::: {.hover-reveal style="width: 500px;"}

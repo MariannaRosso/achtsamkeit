@@ -1,7 +1,7 @@
 ---
-title: "Meditation"
-description: ""
-keywords: [""]
+title: "Music & Piano – Benjamin Ineichen"
+description: "Benjamin Ineichen is a classically trained pianist, composer and improviser. Explore his music, piano performances, compositions, improvisations and upcoming concerts."
+keywords: ["Benjamin Ineichen", "pianist", "piano", "classical pianist", "classical music", "piano concerts", "piano improvisation", "composition", "piano composition", "wedding pianist", "event pianist", "piano music", "classical music concerts", "meditative piano music"]
 toc: false
 format:
   html:
@@ -29,14 +29,12 @@ My musical strength is certainly not technical prowess. What has always interest
 
 Below are two short examples. One is Alexander Scriabin’s Prelude Op. 11 No. 12 in G-sharp minor. The other is a piece for cello and piano that I wrote inspired by a few lines from the Zen poet Ko Un:
 
-I paddled with only one oar,
-then I lost that too.
-For the very first time, I saw myself
-out on the open water.
+I paddled with only one oar, then I lost that too. For the very first time, I saw myself out on the open water.
 
 Sometimes I also give concerts (you can find upcoming ones below). And I’ve been playing at weddings, birthdays and other events for many years. If you’re looking for a pianist, hit me up.
 
-## Testimonial 
+## Testimonial
+
 “Ben’s playing really brought some life to our funeral”.
 
 {{< video images/Video1.mp4 controls="true" >}}
