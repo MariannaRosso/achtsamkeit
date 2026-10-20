@@ -29,6 +29,7 @@ format:
     include-after-body:
       - footer.html
       - oak_leaves_background.html
+      - links.html
     favicon: logo_square.png
     theme:
       - cosmo

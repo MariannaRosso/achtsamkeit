@@ -3,12 +3,12 @@
 ----------------------------------------------------- */
 :root {
   --color-white:      #ffffff;
-  --color-cream:      #fff7ec;
+  --color-cream:      #fffbf5;
   --color-sand:        #eee7d7;
   --color-taupe:       #dbd8c4;
   --color-sage:         #c2caa8;
-  --color-text-dark:  #402719;
-  --color-text-verydark: #402719
+  --color-text-dark:  #3d251e;
+  --color-text-verydark: #3d251e
   --color-text-black: #402719
 }
 
@@ -281,13 +281,18 @@ Figures filter
   transition: filter 0.6s ease;
 }
 
+/* =====================================================
+Figures filter - remove the comments marks to turn on the hover effect
+===================================================== */
+
+/*
 .tint-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-cream); /* #c7cab1 */
+  background-color: var(--color-cream);
   mix-blend-mode: color;
   transition: opacity 0.6s ease;
   pointer-events: none;
@@ -304,6 +309,7 @@ Figures filter
 .hover-reveal:hover .tint-overlay {
   opacity: 0;
 }
+*/
 
 /* =====================================================
 Leaves animation
@@ -404,4 +410,240 @@ body > nav,
   #oak-leaves-bg {
     opacity: 0.75;
   }
+}
+
+
+/* =====================================================
+   MOBILE VERSION
+===================================================== */
+
+@media (max-width: 768px) {
+
+  /* -----------------------------------------
+     HIDE OAK LEAF ANIMATION
+  ----------------------------------------- */
+
+  #oak-leaves-bg {
+    display: none !important;
+  }
+
+
+  /* -----------------------------------------
+     PREVENT HORIZONTAL SCROLL
+  ----------------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* -----------------------------------------
+     MAIN CONTENT
+  ----------------------------------------- */
+
+  #quarto-content,
+  .quarto-container,
+  .page-columns,
+  main.content.column-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+
+  #quarto-document-content {
+    width: 100% !important;
+    max-width: 500px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    /*
+       Space below the fixed navbar.
+       This applies to ALL pages and headings.
+    */
+    padding-top: 40px !important;
+
+    /* Narrower text area */
+    padding-left: 1.4rem !important;
+    padding-right: 1.4rem !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* -----------------------------------------
+     NAVBAR
+  ----------------------------------------- */
+
+  .navbar {
+    position: fixed !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+
+    min-height: 70px;
+
+    padding: 0.8rem 1rem;
+
+    box-sizing: border-box;
+
+    /*
+       Solid background so page content
+       doesn't show through the navbar.
+    */
+    background-color: var(--color-sand) !important;
+    opacity: 1 !important;
+
+    /*
+       Keep navbar above everything else.
+    */
+    z-index: 10000 !important;
+  }
+
+
+  /* -----------------------------------------
+     PORTRAIT
+  ----------------------------------------- */
+
+  #quarto-document-content img:first-of-type {
+    display: block !important;
+
+    /* Slightly smaller portrait */
+    width: 92% !important;
+    max-width: 380px !important;
+
+    height: auto !important;
+
+    /* Center */
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    /*
+       The content padding now creates the
+       space below the navbar, so no large
+       margin-top is needed here.
+    */
+    margin-top: 20px !important;
+
+    /* Space between portrait and text */
+    margin-bottom: 2rem !important;
+  }
+
+
+  /* -----------------------------------------
+     BODY TEXT
+  ----------------------------------------- */
+
+  #quarto-document-content p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+
+    /* Proper justification */
+    text-align: justify !important;
+    text-justify: inter-word;
+
+    /*
+       German hyphenation prevents huge
+       spaces between words.
+    */
+    hyphens: auto;
+    -webkit-hyphens: auto;
+
+    /*
+       Keep text inside its container.
+    */
+    overflow-wrap: normal;
+    word-wrap: normal;
+  }
+
+
+  /* -----------------------------------------
+     HEADINGS
+  ----------------------------------------- */
+
+  #quarto-document-content h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+
+    /*
+       Prevent headings from sitting under
+       the fixed navbar when using anchors.
+    */
+    scroll-margin-top: 90px;
+  }
+
+  #quarto-document-content h2 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    scroll-margin-top: 90px;
+  }
+
+  #quarto-document-content h3 {
+    font-size: 1.3rem;
+    scroll-margin-top: 90px;
+  }
+
+
+  /* -----------------------------------------
+     OTHER IMAGES
+  ----------------------------------------- */
+
+  #quarto-document-content img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* -----------------------------------------
+     FOOTER
+  ----------------------------------------- */
+
+  .site-footer {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+}
+
+/* -----------------------------------------
+   OPEN MOBILE MENU
+----------------------------------------- */
+
+@media (max-width: 768px) {
+
+  
+ .navbar-collapse {
+    background-color: var(--color-sand);
+    border: 1px solid var(--color-taupe);
+    position: absolute;
+    top: 100%; left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem;
+  }
+
+  .navbar-collapse.show {
+    background-color: var(--color-sand) !important;
+  }
+
+  .navbar-nav {
+    background-color: var(--color-sand) !important;
+  }
+
 }
